@@ -6,3 +6,14 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+avr-device = { version = "0.5", features = ["atmega32u4"] }
+usb-device = "0.2"
+atmega-usbd = { git = "https://github.com/agausmann/atmega-usbd.git", rev = "5fc68ca813ce0a37dab65dd4d66efe1ec125f2a8" }
+
+[profile.dev]
+opt-level = "s"
+lto = true
+
+[profile.release]
+opt-level = "s"
+lto = true
