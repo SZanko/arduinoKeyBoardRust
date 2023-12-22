@@ -22,7 +22,7 @@
 #include "Keyboard.h"
 #include "KeyboardLayout.h"
 
-#if defined(_USING_HID)
+//#if defined(_USING_HID)
 
 //================================================================================
 //================================================================================
@@ -211,4 +211,4 @@ size_t Keyboard_::write(const uint8_t *buffer, size_t size) {
 
 Keyboard_ Keyboard;
 
-#endif
+//#endif

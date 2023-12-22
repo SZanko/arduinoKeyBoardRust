@@ -24,11 +24,11 @@
 
 #include "HID.h"
 
-#if !defined(_USING_HID)
-
-#warning "Using legacy HID core (non pluggable)"
-
-#else
+//#if !defined(_USING_HID)
+//
+//#warning "Using legacy HID core (non pluggable)"
+//
+//#else
 
 //================================================================================
 //================================================================================
@@ -147,5 +147,5 @@ public:
 };
 extern Keyboard_ Keyboard;
 
-#endif
+//#endif
 #endif
